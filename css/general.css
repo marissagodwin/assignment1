@@ -17,11 +17,127 @@ html {
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 	text-size-adjust: 100%;
-    
     font-size: 100%;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 img {
 	width: 100%;
     display: block;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    overflow: hidden;
+    background-color: #20B2AA;
+}
+
+.logo {
+    height: 4rem;
+    width: auto;
+    float: right;
+    padding: .5rem 5%;
+}
+
+.hives {
+    margin: 1.25rem 5% 1.25rem;
+    overflow: hidden;
+    padding-top: 1.25rem;
+    background-color: #99FFFF;
+    background-image: url(../images/beehives.svg);
+    background-repeat: repeat-x;
+    background-size: 43rem;
+    background-position: center center;
+    border-radius: 1.25rem
+}
+
+h1 {
+    margin: 10rem 0 2rem;
+    font-weight: normal;
+    font-size: 2.5rem;
+    font-family: helvetica,sans-serif;
+    text-align:center;
+    background-color: rgba(255, 215, 0, .4);
+    padding: .25rem 0 0rem;
+}
+    
+h2 {
+    border-top: solid .1rem;
+    text-shadow: .15rem .15rem .05rem rgba(255, 215, 0, .8);
+    text-align:center;
+}
+
+.talkbubble {
+    margin: 1.75rem 0;
+    padding: 1rem 1rem;
+    width: auto;
+    height: auto;
+    background: #99FFFF;
+    position: relative;
+    -moz-border-radius:    1.25rem;
+    -webkit-border-radius: 1.25rem;
+    border-radius:         1.25rem;
+}
+
+.talkbubble:before {
+   overflow: hidden;
+    content:"";
+   position: absolute;
+   right: 100%;
+   bottom: 26px;
+   width: 0;
+   height: 0;
+   border-top: 13px solid transparent;
+   border-right: 26px solid #99FFFF;
+   border-bottom: 13px solid transparent;
+}
+
+article {
+    margin: 0;
+    padding: 0 5%;
+    overflow: hidden;
+}
+   
+p {
+    line-height: 1.5rem;
+    margin: 0 0 1.5rem;
+}
+
+.dropcap:first-letter {
+        font-size: 4rem;
+        font-family: Georgia;
+        font-weight: bold;
+        float: left;
+        margin: 1rem .5rem 1rem 0;
+}
+
+figure {
+    overflow: hidden;
+    margin: 0 auto 1.5rem;
+    width: 100%;
+    border-radius: 1.25rem
+}
+
+figcaption {
+    text-align:center;
+    background-color: gold;
+}
+
+footer {
+    background-color: #006666;
+    overflow: hidden
+}
+
+footer p {
+    color: white;
+    margin: .5rem 5% 4rem;
+    font-size: .75rem;
+}
+
+footer a {
+    color: white;
 }
